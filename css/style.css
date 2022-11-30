@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Zen+Dots&display=swap');
+
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	padding: 1em;
+	background-color: #2ABFBF;
+	color: #F277A4;
+	margin-bottom: 1em;
+	font-weight: bolder;
+	font-family: 'Titan One', cursive;
+	letter-spacing: 0.1em;
+	font-size: large;
+	text-shadow: #04324c 2px 3px 5px;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+
+.container{
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .3em;
+	border-bottom: 1px solid #9DBF54;
+	margin: .3em 0;
+	color: #7B518C;
+}
+
+.table{
+	overflow-x: auto;
+}
+
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #7B518C;
+	color: #F2CD5E;
+	font-size: large;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #7B518C;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #F2CD5E;
+	background-color:#7B518C;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+button:hover{
+	background-color: #3f2948;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-filme{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+#mensagem-erro {
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+#filtrar{
+	width: 12.5em;
+	height: 2.2em;
+	margin-bottom: 0.7em;
+}
+
+.invisivel{
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.container{
+		width: 60%;
+	}
+	
+}
+@media (max-width: 500px) {
+	.container{
+		width: 100%;
+	}
+	
+}
+
+.sombra{
+	filter: drop-shadow(rgba(0, 0, 0, 0.764) 2px 3px 2px);
+}
+
+.select {
+	width: 21.5em;
+	padding: 0.63em 0em;
+	border: #7B518C solid 1px;
+}
+
+input:focus, .select:focus{
+	outline: none;
+	border: 1px #F2CD5E solid;
+}
+
