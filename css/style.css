@@ -172,6 +172,7 @@ button[disabled=disabled], button:disabled {
 }
 
 .select {
+	max-width: 100%;
 	width: 21.5em;
 	padding: 0.63em 0em;
 	border: #7B518C solid 1px;
