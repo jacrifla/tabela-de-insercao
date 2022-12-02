@@ -83,11 +83,12 @@
                     </tbody>
                 </table>
             </div>
+            <button id="buscar-filmes" class="botao bto-principal">Buscar Filmes</button>
         </section>
         <section class="container">
             <h2 id="titulo-form">Adicionar novo filme</h2>
             <ul id="mensagens-erro"></ul>
-            <form id="form-adiciona" onsubmit="addFilme(event)">
+            <form id="form-adiciona" >
                 <div class="grupo">
                     <label for="titulo">Título:</label>
                     <input type="text" name="titulo" id="titulo" placeholder="Digite o título do filme" class="campo" required>
@@ -118,7 +119,7 @@
 
   
       
-
+    <script src="js/buscar-filmes.js"></script>
     <script src="js/filtra.js"></script>
     <script src="js/remover-filme.js"></script>
     <script src="js/form.js"></script>

@@ -1,17 +1,16 @@
 // Pegando o botao
-let botaoAdicionar = document.querySelector('#adicionar-filme')
+let botaoAdicionar = document.querySelector('#form-adiciona')
 
 // Criando evento de click no botao
+botaoAdicionar.addEventListener('submit', addFilme)
+
 function addFilme(event){
     event.preventDefault() // Para a pagina não atualizar
 
     let form = document.querySelector('#form-adiciona')
     let filme = obtemFilmeDoFormulario(form)
-    let filmeTr = montaTr(filme)
-
-    let tabela = document.querySelector('#tabela-filmes')
-    
-    tabela.appendChild(filmeTr)
+  
+    adicionaFilmeTabela(filme)
 
     form.reset()   
 }
@@ -26,14 +25,6 @@ function obtemFilmeDoFormulario(form){
         status: form.status.value
     }
     return filmes
-}
-
-function montaTd(dado, classe) {
-    let td = document.createElement('td')
-    td.textContent = dado
-    td.classList.add(classe)
-
-    return td
 }
 
 function montaTr(filme) {
@@ -51,4 +42,16 @@ function montaTr(filme) {
     return filmeTr
 }
 
+function montaTd(dado, classe) {
+    let td = document.createElement('td')
+    td.classList.add(classe)
+    td.textContent = dado
 
+    return td
+}  
+
+function adicionaFilmeTabela(filme){
+    let filmeTr = montaTr(filme)
+    let tabela = document.querySelector('#tabela-filmes')
+    tabela.appendChild(filmeTr)
+}
