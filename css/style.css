@@ -183,3 +183,7 @@ input:focus, .select:focus{
 	border: 1px #F2CD5E solid;
 }
 
+.erro{
+	color: #ff0000;
+	font-weight: bold;
+}
